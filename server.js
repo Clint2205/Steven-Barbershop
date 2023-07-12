@@ -13,30 +13,30 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
 // Create a MySQL connection
-const connection = mysql.createConnection({
-  host: 'localhost',
-  user: 'username',
-  password: 'password',
-  database: 'barbershop_db'
-});
+// const connection = mysql.createConnection({
+//   host: 'localhost',
+//   user: 'username',
+//   password: 'password',
+//   database: 'barbershop_db'
+// });
 
 
 
 // Connect to MySQL
-connection.connect(err => {
-  if (err) throw err;
-  console.log('Connected to MySQL!');
-});
+// connection.connect(err => {
+//   if (err) throw err;
+//   console.log('Connected to MySQL!');
+// });
 
 // Set up the route for the homepage
 app.get('/', (req, res) => {
   // Fetch data from the database
-  connection.query('SELECT * FROM services', (err, rows) => {
-    if (err) throw err;
+  // connection.query('SELECT * FROM services', (err, rows) => {
+  //   if (err) throw err;
 
     // Render the homepage template with the fetched data
-    res.render('index', { services: rows });
-  });
+    res.render('index');
+ // });
 });
 
 app.get('/gallery', (req, res) => {

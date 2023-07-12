@@ -1,7 +1,11 @@
 {
-    "rewrites": [
-    
-      { "source": "/(.*)", "destination": "/index" }
+    "version": 2,
+    "builds": [
+      { "src": "public/**", "use": "@vercel/static" },
+      { "src": "views/**", "use": "@vercel/static-build" }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "/views/index.ejs" }
     ]
   }
   

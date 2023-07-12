@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barbershop Homepage</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+  
+  <!-- Font Awesome icons (free version)-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.0/css/all.css" crossorigin="anonymous">
+
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css">
+
+  <!-- Core theme CSS (includes Bootstrap)-->
+  <link rel="stylesheet" href="about.css">
+
+  <!-- jQuery library-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+</head>
+<body>
+  <header>
+    <div class="contact-info">
+        <span class="phone">Phone: +27 68 087 6272 South Africa</span>
+        <span class="email">Email: stevenmuzanenhamo81@gmail.com</span>
+    </div>
+    <button class="book-appointment" href="/about#appoint">Book Appointment</button>
+    <div class="logo">
+      <img src="images/m-letter-logo.jpg" alt="Logo">
+    </div>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+    <a class="navbar-brand" href="/">MuzaBarbers</a>
+    <ul>
+      <li><a href="/">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="/gallery">Gallery</a></li>
+
+    </ul>
+  </nav>
+  </header>
+  <section class="about-section" >
+    <div class="about-container">
+      <div class="about-photo">
+        <img src="images/stevenbio.jpg" alt="Steven's Photo"  id="myImage">
+  
+        <!-- Modal for photo enlargement -->
+        <div id="myModal"class="modal">
+          <div class="modal-content">
+            <span id="closeBtn">&times;</span>
+            <img src="images/stevenbio.jpg" alt="Image">
+          </div>
+        </div>
+      </div>
+    
+  
+      <div class="about-bio">
+        <h2>Head Barber</h2>
+        <p>
+          Steven is an experienced barber based in Rustenburg, Limpopo, South Africa. He has been practicing barbering for
+          about 10 years. With his exceptional skills and dedication, Steven has become a highly sought-after barber in the
+          area.
+        </p>
+        <p>
+          Known for his attention to detail and ability to create stylish and precise haircuts, Steven takes pride in
+          delivering exceptional customer service to his clients. His passion for barbering shines through in every cut and
+          style he creates.
+        </p>
+        <p>
+          If you're looking for a skilled barber who can provide you with a top-notch grooming experience, visit Steven's
+          shop in Rustenburg, South Africa. With his expertise and friendly demeanor, you're guaranteed to leave the shop
+          looking and feeling your best.
+        </p>
+        <p>
+          Contact Steven at +27 123 456 789 or visit his shop at:
+          <br>
+          123 Main Street, Rustenburg, Limpopo, South Africa, 0029.
+        </p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="appointment-section" id="appoint">
+  <h2 class="section-heading">Book an Appointment</h2>
+  <div id="feedback-message"></div> <!-- Feedback message will be displayed here -->
+  <form class="appointment-form" id="appointment-form" onsubmit="submitForm(event)" action="/submit" method="POST">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="date">Date:</label>
+      <input type="date" id="date" name="date" required>
+    </div>
+    <div class="form-group">
+      <label for="time">Time:</label>
+      <input type="time" id="time" name="time" required>
+    </div>
+    <div class="form-group">
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+    </div>
+    <button type="submit" class="submit-button">Submit</button>
+  </form>
+</section>
+
+  
+
+
+  <section class="map-section">
+    <h1 class="section-heading">Location and Directions</h1>
+    <div class="map-container">
+      <!-- Embed your map code here -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d238601.54841929694!2d27.14854813858653!3d-25.731340181765035!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e956bf2f7b344fd%3A0xbdcf7c3f791eb1d!2sRustenburg%2C%20South%20Africa!5e0!3m2!1sen!2sus!4v1623749833661!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="directions-container">
+      <h2>Location</h2>
+      <p>Rustenburg, Limpopo, South Africa 0029</p>
+      <h2>Directions</h2>
+      <p>Follow these directions to reach our shop:</p>
+      <ol>
+        <li>From Rustenburg city center, head north on Main Street.</li>
+        <li>Continue straight onto Rustenburg Road.</li>
+        <li>Turn left onto Limpopo Street.</li>
+        <li>Our shop will be on the right-hand side.</li>
+      </ol>
+    </div>
+  </section>
+  
+  
+ 
+  
+  <footer class="text-center text-white" style="background-image: linear-gradient(to right, #00F260, #0575E6);
+  ">
+
+    <div class="footer-container text-dark m-1" >
+      <div class="footer-column">
+        <h3>Opening Times</h3>
+        <ul>
+          <li>Monday: 9am - 6pm</li>
+          <li>Tuesday: 9am - 6pm</li>
+          <li>Wednesday: 9am - 6pm</li>
+          <li>Thursday: 9am - 6pm</li>
+          <li>Friday: 9am - 6pm</li>
+          <li>Saturday: 9am - 6pm</li>
+          <li>Sunday: 9am - 4pm</li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <div class="logo">
+          <img src="images/m-letter-logo.jpg" alt="Logo">
+        </div>
+      </div>
+      <div class="footer-column ">
+        <h3>Contact Us</h3>
+        <p>Rustenburg, North West</p>
+        <p>Limpopo, South Arica 0029</p>
+        <p>Phone: +27 68 087 6272</p>
+        <p>Email: stevenmuzanenhamo81@gmail.com</p>
+      </div>
+    </div>
+  
+    <!-- Grid container -->
+    <div class="container pt-4">
+      <!-- Section: Social media -->
+      <section class="mb-4">
+        <!-- Facebook -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.facebook.com/profile.php?id=100063689347919"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-facebook-f"></i
+        ></a>
+  
+        <!-- Twitter -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-twitter"></i
+        ></a>
+  
+      
+  
+        <!-- Instagram -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="https://www.instagram.com/kmuzanenhamo/"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-instagram"></i
+        ></a>
+  
+        <!-- Linkedin -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-linkedin"></i
+        ></a>
+        <!-- Github -->
+        <a
+          class="btn btn-link btn-floating btn-lg text-dark m-1"
+          href="#!"
+          role="button"
+          data-mdb-ripple-color="dark"
+          ><i class="fab fa-github"></i
+        ></a>
+      </section>
+      <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 MuzaBarbers.com:
+      <a class="text-dark" href="#"></a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+  
+  <script src="about.js"></script>
+   
+
+
+
+
+<!-- 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

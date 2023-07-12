@@ -5,7 +5,7 @@
       { "src": "views/**", "use": "@vercel/static-build" }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "/views/index.ejs" }
+      { "src": "/(.*)", "dest": "/views/:1" }
     ]
   }
   

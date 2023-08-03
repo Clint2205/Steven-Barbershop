@@ -22,26 +22,29 @@
   
 </head>
 <body>
-  <header>
-    <div class="contact-info">
+  <div class="header-container">
+    <header>
+      <div class="contact-info">
         <span class="phone">Phone: +27 68 087 6272 South Africa</span>
         <span class="email">Email: stevenmuzanenhamo81@gmail.com</span>
-    </div>
-    <button class="book-appointment" href="/about#appoint">Book Appointment</button>
-    <div class="logo">
-      <img src="images/m-letter-logo.jpg" alt="Logo">
-    </div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-    <a class="navbar-brand" href="/">MuzaBarbers</a>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="#">About</a></li>
-      <li><a href="/gallery">Gallery</a></li>
-
-    </ul>
-  </nav>
+      </div>
+      <button class="book-appointment" onclick="redirectToAbout()">Book Appointment</button>
+  
+      <div class="logo">
+        <img src="images/m-letter-logo.jpg" alt="Logo">
+      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+      <a class="navbar-brand" href="/">MuzaBarbers</a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+       
+      </ul>
+    </nav>
   </header>
+  </div>
   <section class="about-section" >
     <div class="about-container">
       <div class="about-photo">
@@ -186,14 +189,7 @@
           ><i class="fab fa-facebook-f"></i
         ></a>
   
-        <!-- Twitter -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-twitter"></i
-        ></a>
+    
   
       
   
@@ -209,7 +205,7 @@
         <!-- Linkedin -->
         <a
           class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
+          href="https://www.linkedin.com/in/clint-muzanenhamo-224646277/"
           role="button"
           data-mdb-ripple-color="dark"
           ><i class="fab fa-linkedin"></i
@@ -217,7 +213,7 @@
         <!-- Github -->
         <a
           class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
+          href="https://github.com/dashboard"
           role="button"
           data-mdb-ripple-color="dark"
           ><i class="fab fa-github"></i
@@ -229,8 +225,7 @@
   
     <!-- Copyright -->
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2023 MuzaBarbers.com:
-      <a class="text-dark" href="#"></a>
+      <a class="text-dark" href="https://www.muzabarbers.com">© 2023 MuzaBarbers.com:</a>
     </div>
     <!-- Copyright -->
   </footer>

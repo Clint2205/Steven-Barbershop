@@ -1,126 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: linear-gradient(to right, #6A11CB, #2575FC);
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+}
 
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
 
+/* header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+} */
 
+.header-container {
+  background-color: #333;
+  padding: 10px;
+}
 
+header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-bottom: 10px;
+}
 
+.phone,
+.email {
+  display: block;
+}
 
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.logo img {
+  width: 100px;
+  height: auto;
+  max-width: 100%;
+}
 
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
 
+nav ul li {
+  margin-right: 10px;
+}
 
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
 
+nav ul li a:hover {
+  background-color: #555;
+}
 
+.book-appointment {
+  background-color: #fff;
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
 
-  }
-  
-  .container {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
-  
-  .contact-info {
-    display: flex;
-    align-items: center;
-  }
-  
-  .phone, .email {
-    margin-right: 10px;
-  }
-  
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
-  .logo img {
-    width: 100px; /* Adjust the size as needed */
-  }
-  
-  nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-  }
-  
-  nav ul li {
-    margin-right: 10px;
-  }
-  
-  nav ul li a {
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  nav ul li a:hover {
-    background-color: #555;
-  }
-  
-  .book-appointment {
-    background-color: #fff;
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    font-weight: bold;
-    cursor: pointer;
-  }
-  
-  .image-container {
-    position: relative;
-  }
-  
-  .image-container img {
-    width: 100%;
-    height:50%;
-  }
-  .image-overlay {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    text-align: left;
-    color: #fff;
-    padding: 20px;
-    
-    width: 100%;
-    box-sizing: border-box;
-  }
-  
-  .image-overlay h1,
-  .image-overlay p {
-    margin: 0;
-  }
-  
-  @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+.image-container {
+  position: relative;
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+
+}
 
 .image-overlay {
-  /* Existing styles */
-  font-family: 'Playfair Display', serif;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  text-align: left;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
-.image-overlay h1 {
-  /* Existing styles */
-  font-family: 'Playfair Display', serif;
-}
-
+.image-overlay h1,
 .image-overlay p {
-  /* Existing styles */
-  font-family: 'Playfair Display', serif;
+  margin: 0;
 }
+
 .appointment-section {
   display: flex;
   justify-content: space-evenly;
@@ -140,8 +136,8 @@ body {
 
 .scissors-image {
   display: block;
-  width: 300px; /* Adjust the width as per your needs */
-  height: 200px; /* Adjust the height as per your needs */
+  width: 100%; /* Adjust the width as per your needs */
+  height: auto; /* Adjust the height as per your needs */
   border-radius: 20px;
 }
 
@@ -181,7 +177,6 @@ body {
   opacity: 1; /* Show the appointment text on hover */
 }
 
-
 .pricing-section {
   background-color: #f7f7f7;
   padding: 50px 0;
@@ -201,18 +196,21 @@ body {
 
 .haircut-styles {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 30px;
 }
 
 .haircut-style {
   flex: 1;
-  margin: 0 10px;
+  margin: 10px;
+  max-width: 300px;
 }
 
 .haircut-style img {
   width: 100%;
   height: auto;
+  max-width: 100%;
 }
 
 .haircut-style h3 {
@@ -234,16 +232,15 @@ body {
   color: #555;
 }
 
-
 footer {
-  background-color:black ;
+  background-color: black;
+  color: white;
   padding: 10px 0;
 }
 
 .footer-container {
   display: flex;
   justify-content: space-evenly;
-  
 }
 
 .footer-column {
@@ -267,5 +264,59 @@ footer {
   margin-bottom: 5px;
 }
 
+/* Media queries for responsiveness */
 
-  
+/* Small screens (up to 600px) */
+@media screen and (max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    margin-bottom: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .book-appointment {
+    margin-top: 10px;
+  }
+
+  .image-overlay {
+    text-align: center;
+  }
+
+  .appointment-section {
+    flex-direction: column;
+  }
+
+  .appointment-overlay,
+  .appointment-link {
+    margin-bottom: 20px;
+  }
+
+  .haircut-styles {
+    justify-content: flex-start;
+  }
+
+  .haircut-style {
+    margin: 10px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}

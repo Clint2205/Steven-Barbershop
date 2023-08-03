@@ -22,28 +22,29 @@
   
 </head>
 <body>
-  <header>
-    <div class="contact-info">
-      <span class="phone">Phone: +27 68 087 6272 South Africa</span>
-      <span class="email">Email: stevenmuzanenhamo81@gmail.com</span>
-    </div>
-    <button class="book-appointment" onclick="redirectToAbout()">Book Appointment</button>
-
-    <div class="logo">
-      <img src="images/m-letter-logo.jpg" alt="Logo">
-    </div>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-
-    <a class="navbar-brand" href="/">MuzaBarbers</a>
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="/about">About</a></li>
-      <li><a href="/gallery">Gallery</a></li>
-
-    </ul>
-  </nav>
+  <div class="header-container">
+    <header>
+      <div class="contact-info">
+        <span class="phone">Phone: +27 68 087 6272 South Africa</span>
+        <span class="email">Email: stevenmuzanenhamo81@gmail.com</span>
+      </div>
+      <button class="book-appointment" onclick="redirectToAbout()">Book Appointment</button>
+  
+      <div class="logo">
+        <img src="images/m-letter-logo.jpg" alt="Logo">
+      </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  
+      <a class="navbar-brand" href="/">MuzaBarbers</a>
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+       
+      </ul>
+    </nav>
   </header>
-
+  </div>
   
   <div class="galleryheading" id="gallery_heading">
     <h1>Welcome to our Gallery</h1>
@@ -62,6 +63,7 @@
       <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
       <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
     </ol>
 
     <!-- Slides -->
@@ -76,10 +78,14 @@
         <img src="images/pic8.jpg" class="d-block w-100" alt="Carousel Image 3">
       </div>
       <div class="carousel-item">
-        <img src="images/pic17.jpg" class="d-block w-100" alt="Carousel Image 4">
+        <img src="images/pic18.jpg" class="d-block w-100" alt="Carousel Image 4">
+      </div>
+     
+      <div class="carousel-item">
+        <img src="images/pic28.jpg" class="d-block w-100" alt="Carousel Image 5">
       </div>
       <div class="carousel-item">
-        <img src="images/pic18.jpg" class="d-block w-100" alt="Carousel Image 5">
+        <img src="images/pic31.jpg" class="d-block w-100" alt="Carousel Image 6">
       </div>
     </div>
 
@@ -112,6 +118,14 @@
   <div class="video-wrapper">
     <video class="video" controls>
       <source src="images/vid3.mp4" type="video/mp4">
+    </video>
+    <div class="overlay">
+     
+    </div>
+  </div>
+  <div class="video-wrapper">
+    <video class="video" controls>
+      <source src="images/vid4.mp4" type="video/mp4">
     </video>
     <div class="overlay">
      
@@ -274,14 +288,7 @@
           ><i class="fab fa-facebook-f"></i
         ></a>
   
-        <!-- Twitter -->
-        <a
-          class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
-          role="button"
-          data-mdb-ripple-color="dark"
-          ><i class="fab fa-twitter"></i
-        ></a>
+        
   
       
   
@@ -297,7 +304,7 @@
         <!-- Linkedin -->
         <a
           class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
+          href="https://www.linkedin.com/in/clint-muzanenhamo-224646277/"
           role="button"
           data-mdb-ripple-color="dark"
           ><i class="fab fa-linkedin"></i
@@ -305,7 +312,7 @@
         <!-- Github -->
         <a
           class="btn btn-link btn-floating btn-lg text-dark m-1"
-          href="#!"
+          href="https://github.com/dashboard"
           role="button"
           data-mdb-ripple-color="dark"
           ><i class="fab fa-github"></i
@@ -317,8 +324,7 @@
   
     <!-- Copyright -->
     <div class="text-center text-dark p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-      © 2023 MuzaBarbers.com:
-      <a class="text-dark" href="#"></a>
+      <a class="text-dark" href="https://www.muzabarbers.com">© 2023 MuzaBarbers.com:</a>
     </div>
     <!-- Copyright -->
   </footer>

@@ -1,13 +1,20 @@
   /* Add your custom CSS styles here */
+  * {
+    box-sizing: border-box;
+  }
+  
   body {
     background-color: white;
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", sans-serif;
   }
   
   .container {
     max-width: 800px;
     margin: 0 auto;
   }
-  header {
+  /* header {
     background-color: #333;
     color: #fff;
     padding: 10px;
@@ -15,11 +22,24 @@
     align-items: center;
     justify-content: space-between;
     
+  } */
+  .header-container {
+    background-color: #333;
+    padding: 10px;
   }
   
+  
+header {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
   .contact-info {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 10px;
   }
   
   .phone, .email {
@@ -220,6 +240,25 @@
   button.submit-button:hover {
     background-color: #e8564e;
   }
+  /* Add a media query for small screens (up to 576px) */
+@media (max-width: 576px) {
+  .appointment-form {
+    flex-direction: column; /* Adjust the layout to stack form elements vertically */
+  }
+
+  .form-group {
+    margin-bottom: 10px; /* Reduce the margin between form groups on small screens */
+  }
+
+  label {
+    text-align: left; /* Align the labels to the left on small screens */
+  }
+
+  button.submit-button {
+    margin-top: 10px; /* Add some margin between the form and the submit button on small screens */
+  }
+}
+
   
 
   .map-section {
@@ -246,9 +285,18 @@
   iframe{
 
     border-radius: 8px;
-    width: 800px;
+    width: 100%;
   }
+  @media(max-width: 576px) {
+    .map-container {
+      margin-bottom: 20px; /* Add some margin between the map and the directions container on small screens */
+    }
   
+
+
+
+
+  }
 
 
   footer {
@@ -282,4 +330,81 @@
   .footer-column p {
     margin-bottom: 5px;
   }
+  /* Add a media query for small screens (up to 576px) */
+@media (max-width: 576px) {
+  .about-container {
+    flex-direction: column; /* Adjust the layout to stack elements vertically */
+    text-align: center; /* Center the content on small screens */
+  }
+
+  .about-photo {
+    margin-bottom: 20px; /* Add some margin between the photo and the bio on small screens */
+  }
+
+  .about-photo img {
+    width: 200px; /* Reduce the image width for small screens */
+  }
+
+  .about-bio {
+    margin-left: 0; /* Remove left margin on small screens to center the bio */
+  }
+}
+
+
+/* Small screens (up to 600px) */
+@media(max-width: 600px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contact-info {
+    margin-bottom: 0;
+  }
+
+  .navbar {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+
+  .book-appointment {
+    margin-top: 10px;
+  }
+
+  .image-overlay {
+    text-align: center;
+  }
+
+  .appointment-section {
+    flex-direction: column;
+  }
+
+  .appointment-overlay,
+  .appointment-link {
+    margin-bottom: 20px;
+  }
+
+  .haircut-styles {
+    justify-content: flex-start;
+  }
+
+  .haircut-style {
+    margin: 10px 0;
+  }
+
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
+
   
